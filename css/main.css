@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg"); }
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg"); }
+
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf") format("truetype"), url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg"); }
+
+body {
+  font-family: ProximaNova-Regular;
+  font-size: 0.875em;
+  line-height: 1.625em;
+  background: #fff;
+  color: #6e7377; }
+
+h1, h2 {
+  font-family: ProximaNova-Bold;
+  font-size: 2.25em;
+  text-align: center;
+  color: #3c4348;
+  line-height: 1.125em; }
+
+.more-button {
+  color: #fff;
+  font-family: ProximaNova-Semibold;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 8px 17px;
+  border-radius: 40px;
+  background: #1471b3; }
+
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto; }
+
+header .header__top-line {
+  background: #008fd5;
+  overflow: hidden;
+  padding: 15px 0;
+  margin-bottom: 50px; }
+
+header .header__top-line a {
+  color: #fff;
+  text-decoration: none; }
+
+header .header__top-line .header__logo {
+  float: left;
+  margin-top: 6px; }
+
+header .header__top-line .header__logo a {
+  font-size: 1.875em;
+  font-family: ProximaNova-Bold; }
+
+header .header__top-line .header__sign {
+  background: #1471b3;
+  padding: 7px 20px;
+  position: relative;
+  border-radius: 20px;
+  float: right; }
+
+header .header__top-line .header__sign span {
+  color: #7ec0e0;
+  padding: 11px 15px;
+  background: #1065a1;
+  position: absolute;
+  left: 37%;
+  top: -4px;
+  border-radius: 100%; }
+
+header .header__top-line .header__sign a {
+  font-size: 1em;
+  font-family: ProximaNova-Regular; }
+
+header .header__top-line .header__sign a:first-child {
+  margin-right: 60px; }
+
+.header__title {
+  color: #008fd5;
+  text-align: center;
+  font-size: 1.3125em;
+  font-family: ProximaNova-Semibold;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  background: url(../img/header_tittle_bg.png) no-repeat bottom; }
+
+.sign-up {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 125px; }
+
+.sign-up input[type="text"] {
+  background: #f0f5f8;
+  border: 1px solid #d7dfe5;
+  border-radius: 5px;
+  font-size: 0.9375em;
+  font-family: ProximaNova-Semibold;
+  padding: 15px;
+  max-width: 400px;
+  width: 41%;
+  vertical-align: top;
+  margin-top: 2px; }
+
+.sign-up input[type="submit"] {
+  background: url(../img/sign_button_bg.png) no-repeat;
+  border: none;
+  padding: 18px 40px;
+  font-size: 1.1875em;
+  font-family: ProximaNova-Bold;
+  color: #fff;
+  cursor: pointer; }
+
+.slider-section {
+  background: #e6eff6;
+  text-align: center;
+  padding-bottom: 38px; }
+
+.slider-section .slider-section__wrap {
+  max-widht: 914px;
+  width: 94%;
+  margin: 0 auto;
+  background: url(../img/slider_computer.png) no-repeat;
+  background-size: 100%;
+  padding: 3.28% 0 7.111% 0;
+  position: relative;
+  top: -75px; }
+
+.slider-section .slider-section__wrap .slider-section__slider {
+  width: 66.41%;
+  max-width: 607px;
+  margin: 0 auto; }
+
+.slider-section .slider-section__wrap .slider-section__slider .slide img {
+  width: 100%; }
+
+.slider-section p {
+  padding: 30px 0 30px 0; }
+
+.about-us {
+  padding: 80px 0 117px 0;
+  overflow: hidden; }
+
+.about-us h2 {
+  text-align: left;
+  padding-bottom: 35px; }
+
+.about-us .about-us__left {
+  float: left;
+  width: 48.9%; }
+
+.about-us .about-us__left .about-us__description-bold {
+  padding: 40px 0 30px 0;
+  font-weight: 600; }
+
+.about-us .about-us__right {
+  float: right;
+  width: 45%; }
+
+.about-us .about-us__right img {
+  width: 100%; }
+
+footer {
+  height: 84px;
+  line-height: 84px;
+  background: #ececec;
+  overflow: hidden; }
+
+footer .footer__coperite {
+  float: left; }
+
+footer .footer__designed-by {
+  float: right; }
+
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+@media only screen and (max-width: 768px) {
+  .about-us .about-us__left {
+    float: none;
+    width: 100%;
+    text-align: center; }
+  .about-us .about-us__left h2 {
+    text-align: center; }
+  .about-us .about-us__right {
+    float: none;
+    width: 100%;
+    margin-bottom: 35px; }
+  .about-us .about-us__right img {
+    display: block;
+    margin: 0 auto;
+    width: 80%; } }
+
+@media only screen and (max-width: 640px) {
+  footer {
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 1.375em;
+    padding-top: 30px; }
+  footer .footer__coperite {
+    float: none; }
+  footer .footer__designed-by {
+    float: none; } }
+
+@media only screen and (max-width: 480px) {
+  .sign-up input[type="text"] {
+    width: 90%;
+    margin-bottom: 15px; }
+  .slider-section__wrap {
+    display: none; }
+  .sign-up {
+    padding-bottom: 35px; }
+  .slider-section {
+    padding-top: 35px; } }
+
+@media only screen and (max-width: 360px) {
+  header .header__top-line {
+    text-align: center; }
+  header .header__top-line .header__logo {
+    float: none;
+    margin-bottom: 15px; }
+  header .header__top-line .header__sign {
+    float: none;
+    max-width: 180px;
+    margin: 0 auto; } }
