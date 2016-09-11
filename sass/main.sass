@@ -1,0 +1,253 @@
+@import "bourbon"
+@import reset
+
++font-face("ProximaNova-Bold", "../fonts/ProximaNova-Bold/ProximaNova-Bold", normal, $file-formats: otf eot woff ttf svg)
++font-face("ProximaNova-Regular", "../fonts/ProximaNova-Regular/ProximaNova-Regular", normal, $file-formats: otf eot woff ttf svg)
++font-face("ProximaNova-Semibold", "../fonts/ProximaNova-Semibold/ProximaNova-Semibold", normal, $file-formats: otf eot woff ttf svg)
+
+body
+	font-family: ProximaNova-Regular
+	font-size: em(14px)
+	line-height: em(26px)
+	background: #fff
+	color: #6e7377
+
+h1,h2
+	font-family: ProximaNova-Bold
+	font-size: em(36px)
+	text-align: center
+	color: #3c4348
+	line-height: em(18px)
+
+.more-button
+	color: #fff
+	font-family: ProximaNova-Semibold
+	font-size: em(16px)
+	text-decoration: none
+	padding: 8px 17px
+	border-radius: 40px
+	background: #1471b3
+
+.wrapper
+	max-width: 980px
+	margin: 0 auto
+
+header
+	.header__top-line
+		background: #008fd5
+		overflow: hidden
+		padding: 15px 0
+		margin-bottom: 50px
+			
+		a
+			color: #fff
+			text-decoration: none
+
+		.header__logo
+			float: left
+			margin-top: 6px
+			a
+				font-size: em(30px)
+				font-family: ProximaNova-Bold
+
+		.header__sign
+			background: #1471b3
+			padding: 7px 20px
+			position: relative
+			border-radius: 20px
+			float: right
+
+			span
+				color: #7ec0e0
+				padding: 11px 15px
+				background: #1065a1
+				position: absolute
+				left: 37%
+				top: -4px
+				border-radius: 100%
+			
+			a
+				font-size: em(16px)
+				font-family: ProximaNova-Regular
+			
+				&:first-child
+					margin-right: 60px
+
+.header__title
+	color: #008fd5
+	text-align: center
+	font-size: em(21px)
+	font-family: ProximaNova-Semibold
+	margin-top: 20px
+	padding-bottom: 30px
+	background: url(../img/header_tittle_bg.png) no-repeat bottom
+
+.sign-up
+	text-align: center
+	padding-top: 20px
+	padding-bottom: 125px
+
+	input[type="text"]
+		background: #f0f5f8
+		border: 1px solid #d7dfe5
+		border-radius: 5px
+		font-size: em(15px)
+		font-family: ProximaNova-Semibold
+		padding: 15px
+		max-width: 400px
+		width: 41%
+		vertical-align: top
+		margin-top: 2px
+
+	
+	input[type="submit"]
+		background: url(../img/sign_button_bg.png) no-repeat
+		border: none
+		padding: 18px 40px
+		font-size: em(19px)
+		font-family: ProximaNova-Bold
+		color: #fff
+		cursor: pointer
+
+.slider-section
+	background: #e6eff6
+	text-align: center
+	padding-bottom: 38px
+
+	.slider-section__wrap
+		max-widht: 914px
+		width: 94%
+		margin: 0 auto
+		background: url(../img/slider_computer.png) no-repeat
+		background-size: 100%
+		padding: 3.28% 0 7.111% 0
+		position: relative
+		top: -75px
+	
+		.slider-section__slider
+			width: 66.41%
+			max-width: 607px
+			margin: 0 auto
+
+			.slide
+
+				img
+					width: 100%
+
+	p
+		padding: 30px 0 30px 0
+
+.about-us
+	padding: 80px 0 117px 0
+	overflow: hidden
+
+	h2
+		text-align: left
+		padding-bottom: 35px
+
+	.about-us__left
+		float: left
+		width: 48.9%
+
+		.about-us__description-bold
+			padding: 40px 0 30px 0
+			font-weight: 600
+
+	.about-us__right
+		float: right
+		width: 45%
+
+		img
+			width: 100%
+
+footer
+	height: 84px
+	line-height: 84px
+	background: #ececec
+	overflow: hidden
+
+	.footer__coperite
+		float: left
+
+	.footer__designed-by
+		float: right
+
+
+
+
+
+@media only screen and (max-width : 1000px)
+
+	.wrapper
+		padding-left: 15px
+		padding-right: 15px
+
+
+@media only screen and (max-width : 768px)
+
+	.about-us
+
+		.about-us__left
+			float: none
+			width: 100%
+			text-align: center
+
+			h2
+				text-align: center
+
+		.about-us__right
+			float: none
+			width: 100%
+			margin-bottom: 35px
+
+			img
+				display: block
+				margin: 0 auto
+				width: 80%
+
+@media only screen and (max-width : 640px)
+
+	footer
+		box-sizing: border-box
+		text-align: center
+		line-height: em(22px)
+		padding-top: 30px
+
+		.footer__coperite
+			float: none
+
+		.footer__designed-by
+			float: none
+
+
+@media only screen and (max-width : 480px)
+
+	.sign-up
+		input[type="text"]
+			width: 90%
+			margin-bottom: 15px
+	
+	.slider-section__wrap
+		display: none
+
+	.sign-up
+		padding-bottom: 35px
+
+	.slider-section
+		padding-top: 35px
+
+
+@media only screen and (max-width : 360px)
+
+	header
+		.header__top-line
+			text-align: center
+
+			.header__logo
+				float: none
+				margin-bottom: 15px
+
+			.header__sign
+				float: none
+				max-width: 180px
+				margin: 0 auto
